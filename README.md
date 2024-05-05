@@ -22,12 +22,11 @@ pip install -e .
 ## Visualziation of Memory Selections 
 
 
-### Comparison between ReLU and Tanh
+### ReLU
 
-<img src="/assets/exp/relu_20/docreps.gif">
-<img src="/assets/exp/tanh_20_0.1/docreps.gif">
+<img src="/assets/exp/relu_20.gif">
 
 ### Comparison between Guide Alpha 0.1 and 0.5
 
-<img src="/assets/exp/tanh_20_0.1/docreps.gif">
-<img src="/assets/exp/tanh_20_0.5/docreps.gif">
+<img src="/assets/exp/tanh_20_0.1.gif">
+<img src="/assets/exp/tanh_20_0.5.gif">
