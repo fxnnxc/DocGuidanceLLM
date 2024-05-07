@@ -11,8 +11,18 @@ pip install -e .
 ```
 
 ## Run 
-📚 
-
 
 
 ## Tools 
+
+
+## Visualziation of Memory Selections 
+
+
+### ReLU
+
+<img src="/assets/relu.gif">
+
+### Tanh
+
+<img src="/assets/tanh.gif">
