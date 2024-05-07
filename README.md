@@ -11,12 +11,9 @@ pip install -e .
 ```
 
 ## Run 
-📚 
-
 
 
 ## Tools 
-
 
 
 ## Visualziation of Memory Selections 
@@ -24,9 +21,8 @@ pip install -e .
 
 ### ReLU
 
-<img src="/assets/exp/relu_20.gif">
+<img src="/assets/relu.gif">
 
-### Comparison between Guide Alpha 0.1 and 0.5
+### Tanh
 
-<img src="/assets/exp/tanh_20_0.1.gif">
-<img src="/assets/exp/tanh_20_0.5.gif">
+<img src="/assets/tanh.gif">
