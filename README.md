@@ -12,7 +12,10 @@
 
 Please see `utils.py` the implementation of memory selection. 
 
+**Visualization of ReLU**
 <img src="/assets/output_relu.gif" width="100%">
+
+**Visualization of Tanh**
 <img src="/assets/output_tanh.gif" width="100%">
 
 
