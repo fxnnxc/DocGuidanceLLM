@@ -123,7 +123,7 @@ Please see `utils.py` for the implementation of memory selection.
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{author2024document,
+@inproceedings{park2024document,
   title={Memorizing Documents with Guidance in Large Language Models},
   author={Park, Bumjin and Choi, Jaesik},
   booktitle={Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI)},
