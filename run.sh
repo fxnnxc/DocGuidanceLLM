@@ -1,34 +1,42 @@
-# Training of Documentwise-Memories 
-# Author : Bumjin Park
+#!/bin/bash
+
+# 🧠 Document Memory with Guidance Training Script
+# Author: Bumjin Park
 # -------------------------------------------
-# 🍊 General Training of Document-Wise Memories 
+# Training script for Document-Wise Memory Selection
 # -------------------------------------------
 
-# --- LLM Related ---
+echo "🚀 Starting Document Memory Guidance Training..."
+
+# ==========================================
+# 🎯 EXPERIMENT CONFIGURATION
+# ==========================================
+
+# --- LLM Configuration ---
 lm_name=pythia 
 lm_size=1b  
 num_gpus=1
 lm_cache_dir=none
 
-# --- Data Related ---
+# --- Dataset Configuration ---
 data_cache_dir=none
 max_labels=10
 max_segements=10
 segment_length=128
 max_length=256
 
-# --- Document Memory Related  ---
+# --- Document Memory Configuration ---
 key_dim=2
-key_activation=tanh # tanh
+key_activation=tanh  # Options: tanh, relu
 hook_memory_dim=32
 hook_memory_layer=15
 lm_act=gelu
-negative_key_type=other
-document_key_module_type=linear # linear nonlinear
+negative_key_type=other  # Options: random, other, zero
+document_key_module_type=linear  # Options: linear, nonlinear
 target_negative_ce=4.5
-guidance=0.1
+guidance=0.1  # Alpha parameter for guidance loss
 
-# --- Optimization Related ---
+# --- Training Configuration ---
 batch_size=16
 lr=1e-3
 num_accumulation_steps=1
@@ -36,8 +44,23 @@ grad_clip_coeff=5
 num_epochs=500
 save_freq=10
 
+# --- Experiment Setup ---
 seed=1
 save_dir=outputs/$lm_name/$lm_size
+
+echo "📋 Configuration:"
+echo "  Model: $lm_name-$lm_size"
+echo "  Memory Dim: $hook_memory_dim"
+echo "  Key Activation: $key_activation"
+echo "  Guidance: $guidance"
+echo "  Save Dir: $save_dir"
+echo ""
+
+# ==========================================
+# 🚀 RUN TRAINING
+# ==========================================
+
+echo "🎯 Starting training..."
 python train_guidance.py \
         --lm_name $lm_name \
         --lm_size $lm_size \
@@ -64,4 +87,6 @@ python train_guidance.py \
         --negative_key_type $negative_key_type \
         --document_key_module_type $document_key_module_type \
         --target_negative_ce $target_negative_ce \
-        --guidance $guidance 
+        --guidance $guidance
+
+echo "✅ Training completed!" 
