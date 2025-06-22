@@ -125,18 +125,10 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @inproceedings{author2024document,
   title={Memorizing Documents with Guidance in Large Language Models},
-  author={Author, A. and Author, B.},
+  author={Park, Bumjin and Choi, Jaesik},
   booktitle={Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2024}
 }
-```
-
----
-
-## 🔧 Installation
-
-```bash
-pip install -e .
 ```
 
 ## 📋 Requirements
@@ -144,6 +136,4 @@ pip install -e .
 Key dependencies include:
 - PyTorch
 - Transformers
-- Datasets
-- Other dependencies listed in `requirements.txt`
 
