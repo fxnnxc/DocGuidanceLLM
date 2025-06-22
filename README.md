@@ -3,13 +3,13 @@
 <div align="center">
 
 [![IJCAI 2024](https://img.shields.io/badge/IJCAI-2024-blue?style=for-the-badge&logo=academia)](https://ijcai-24.org/)
-[![Project](https://img.shields.io/badge/Project-Document%20Memory%20Guidance-darkblue?style=for-the-badge&logo=github)](https://fxnnxc.github.io/main_papers/2024_guidace_loss_for_documents/)
+[![Project](https://img.shields.io/badge/Project-Document%20Memory%20Guidance-darkblue?style=for-the-badge&logo=github)](https://bumjini.github.io/articles/2024_ijcai_document_memory/)
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-darkgreen?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2406.15996)
 
 
 **Memorizing Documents with Guidance in Large Language Models**
 
-| [**🌐 Project Page**](https://bumjini.github.io/articles/2024_ijcai_document_memory//) | [**📄 Paper**](https://arxiv.org/abs/2406.15996) |
+| [**🌐 Project Page**](https://bumjini.github.io/articles/2024_ijcai_document_memory/) | [**📄 Paper**](https://arxiv.org/abs/2406.15996) |
 
 </div>
 
